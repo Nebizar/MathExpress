@@ -5,29 +5,33 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
+        tools:context=".MainGame">
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+        <Button
+                android:text="Press to start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button7"/>
         <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="30sp"
-                android:textStyle="bold" android:textColor="@color/colorPrimary"/>
-        <Button
-                android:text="PLAY"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="36sp"/>
+        <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button"/>
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText3"/>
         <Button
-                android:text="NEW EQUATION"
+                android:text="Check"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2"/>
+                android:layout_height="wrap_content" android:id="@+id/button6"/>
         <Button
-                android:text="LOG OUT"
+                android:text="Cancel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button3"/>
+                android:layout_height="wrap_content" android:id="@+id/button8"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

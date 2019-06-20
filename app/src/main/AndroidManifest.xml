@@ -10,11 +10,23 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".AddNew">
+        </activity>
+        <activity
+                android:name=".FullscreenActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_fullscreen"
+                android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".MainGame">
+        </activity>
+        <activity android:name=".LoginActivity">
         </activity>
     </application>
 
