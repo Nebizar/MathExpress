@@ -8,16 +8,25 @@ import kotlinx.android.synthetic.main.activity_add_new.*
 
 class AddNew : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_new)
 
         textView2.text = "Add new equation and its solution !"
+        var dbHandler = DatabaseHandler(this)
 
         button4.setOnClickListener {
+            var success: Boolean = false
             if(validation()){
                 val eq = editText.text.toString()
                 val sol = editText2.text.toString()
+                success = dbHandler!!.addEquation(eq,sol)
+
+                if (success){
+                    val toast = Toast.makeText(this,"Saved Successfully", Toast.LENGTH_LONG).show()
+                }
             }
         }
 

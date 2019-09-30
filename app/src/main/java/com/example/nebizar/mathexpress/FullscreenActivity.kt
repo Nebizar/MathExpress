@@ -65,7 +65,7 @@ class FullscreenActivity : AppCompatActivity() {
         val thread = Thread(){
             run{
                 sleep(2000)
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
             }
         }

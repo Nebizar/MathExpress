@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = "Hello, Anon"
+        textView.text = "Hello, choose your action"
 
         button.setOnClickListener{
             val intent = Intent(this, MainGame::class.java)
@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         button3.setOnClickListener {
-
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }
